@@ -1,0 +1,18 @@
+{
+	"name": "afriend",
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
+	// Install Python dependencies automatically on environment creation.
+	"postCreateCommand": "pip install -r requirements.txt",
+	// Flask API (5000) and Ollama inference server (11434).
+	"forwardPorts": [5000, 11434],
+	"portsAttributes": {
+		"5000": {
+			"label": "Flask API",
+			"onAutoForward": "notify"
+		},
+		"11434": {
+			"label": "Ollama",
+			"onAutoForward": "silent"
+		}
+	}
+}
