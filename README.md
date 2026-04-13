@@ -1,6 +1,6 @@
-# afriend
+# A Friend
 
-A Flask REST API that runs DeepSeek locally (via Ollama) and keeps per-phone-number chat history as Markdown files.
+A Flask chatting REST API that runs keeps per-phone-number chat history as locally stored Markdown files.
 
 ## Requirements
 
